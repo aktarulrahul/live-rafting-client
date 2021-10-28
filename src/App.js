@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MenuBar from './components/MenuBar/MenuBar';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
@@ -9,9 +9,10 @@ import MyBooking from './pages/MyBooking/MyBooking';
 import AllBooking from './pages/AllBooking/AllBooking';
 import AddNewPackage from './pages/AddNewPackage/AddNewPackage';
 import NotFound from './pages/NotFound/NotFound';
+import AuthProvider from './contexts/AuthProvider';
 function App() {
   return (
-    <div>
+    <AuthProvider>
       <BrowserRouter>
         <MenuBar />
         <Switch>
@@ -45,7 +46,7 @@ function App() {
         </Switch>
         <Footer />
       </BrowserRouter>
-    </div>
+    </AuthProvider>
   );
 }
 
