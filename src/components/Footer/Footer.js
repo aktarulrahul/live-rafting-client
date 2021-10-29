@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className="w-screen">
-      <div className="grid grid-cols-3 gap-4 bg-gray-600 text-white px-4">
+      <div className="md:grid grid-cols-3 gap-4 bg-gray-600 text-white px-4">
         <div className="m-2 p-2">
           <NavLink to="/">
             <h2 className="text-4xl font-bold my-2">
@@ -22,7 +22,7 @@ const Footer = () => {
           <p className="text-2xl my-2">Call Us</p>
           <p className="text-xl my-2  ">+14 2 3465 8754</p>
           <p className="text-2xl my-2">Write a Message</p>
-          <p className="text-xl my-2  ">noreply@liverafting.com</p>
+          <p className="text-xl my-2  ">info@liverafting.com</p>
         </div>
         <div className="m-2 p-2">
           <h2 className="text-3xl my-3">Address</h2>
