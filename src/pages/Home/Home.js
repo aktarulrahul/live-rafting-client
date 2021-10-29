@@ -11,7 +11,7 @@ const Home = () => {
       <Banner />
       <PackageContainer />
       <WhyRafting />
-      <video className="videoTag" autoPlay loop muted>
+      <video className="videoTag w-screen" autoPlay loop muted>
         <source src={v} type="video/mp4" />
       </video>
       <Testimonial />
