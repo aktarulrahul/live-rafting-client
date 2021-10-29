@@ -1,4 +1,5 @@
 import Banner from '../../components/Banner/Banner';
+import WhyRafting from '../../components/WhyRafting/WhyRafting';
 
 const About = () => {
   return (
@@ -52,6 +53,7 @@ const About = () => {
           </blockquote>
         </div>
       </div>
+      <WhyRafting />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 const WhyRafting = () => {
   return (
-    <div className="my-4 mt-16">
+    <div className="mt-16">
       <Fade left>
         <div className="text-center lg:w-1/2 mx-auto ">
           <h1 className="text-4xl text-blue-800 uppercase font-mono my-4">
@@ -18,10 +18,10 @@ const WhyRafting = () => {
           </p>
         </div>
       </Fade>
-      <div className="grid md:grid-cols-2 my-4 mt-16">
+      <div className="grid md:grid-cols-2 mt-4 mt-16">
         <div className="p-8 bg-blue-800 text-white">
           <h1 className="text-2xl uppercase font-mono my-4">
-            You get an amazing view
+            <i className="fas fa-mountain text-4xl"></i> You get an amazing view
           </h1>
           <p>
             Rafting makes sure you get a picturesque view of the water,
@@ -35,7 +35,8 @@ const WhyRafting = () => {
         <div className="lr-why lr-why-bg-2 md:h-96 h-48"></div>
         <div className="p-8  text-blue-800">
           <h1 className="text-2xl uppercase font-mono my-4">
-            Why is whitewater rafting fun?
+            <i className="fas fa-water text-4xl"></i> Why is whitewater rafting
+            fun?
           </h1>
           <p>
             It's a Learning Experience. No matter what part of the adventure
@@ -47,7 +48,7 @@ const WhyRafting = () => {
         </div>
         <div className="p-8 bg-blue-800 text-white">
           <h1 className="text-2xl uppercase font-mono my-4">
-            Is rafting adventurous?
+            <i className="fas fa-route text-4xl"></i> Is rafting adventurous?
           </h1>
           <p>
             Rafting involves riding down the waves of a river in an inflatable

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import confirm from '../../images/confirm.svg';
+import confirm from '../../images/confirm.jpg';
 
 const Confirm = () => {
   return (
@@ -23,7 +23,7 @@ const Confirm = () => {
           </NavLink>
         </div>
         <div className="my-5">
-          <img className="w-2/3 mx-auto " src={confirm} alt="" />
+          <img className="w-full mx-auto " src={confirm} alt="" />
         </div>
       </div>
     </div>
