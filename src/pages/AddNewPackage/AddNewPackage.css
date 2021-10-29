@@ -1,0 +1,10 @@
+.lr-add-form input,
+textarea {
+  display: block;
+  width: 90%;
+  margin: 10px 5%;
+  text-align: center;
+  padding: 5px 20px;
+  border: 1px solid gray;
+  border-radius: 25px;
+}
