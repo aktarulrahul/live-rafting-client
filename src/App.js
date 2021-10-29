@@ -10,6 +10,7 @@ import AllBooking from './pages/AllBooking/AllBooking';
 import AddNewPackage from './pages/AddNewPackage/AddNewPackage';
 import NotFound from './pages/NotFound/NotFound';
 import AuthProvider from './contexts/AuthProvider';
+import AllRaftingPackages from './pages/AllRaftingPackages/AllRaftingPackages';
 function App() {
   return (
     <AuthProvider>
@@ -20,6 +21,9 @@ function App() {
             <Home />
           </Route>
           <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/about">
             <Home />
           </Route>
           <Route path="/sign-in-up">
@@ -39,6 +43,9 @@ function App() {
           </Route>
           <Route path="/add-new-package">
             <AddNewPackage />
+          </Route>
+          <Route path="/all-packages">
+            <AllRaftingPackages />
           </Route>
           <Route path="*">
             <NotFound />

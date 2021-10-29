@@ -17,7 +17,7 @@ const PackageCard = ({ raftingPackage }) => {
           </p>
           <p className="mb-2">{description}</p>
           <hr className="my-3" />
-          <table class="table-fixed">
+          <table className="table-fixed">
             <tbody>
               <tr>
                 <td className="font-bold pr-2">Length</td>

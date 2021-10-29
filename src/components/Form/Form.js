@@ -15,7 +15,7 @@ const Form = ({
   return (
     <div className="px-4 bg-blue-100 rounded shadow-lg pt-2">
       <h2 className="text-4xl font-bold text-center my-3 text-blue-800">
-        <i class="fas fa-ship"></i> Live Rafting
+        <i className="fas fa-ship"></i> Live Rafting
       </h2>
       <form onSubmit={handleSubmission}>
         {type === 'signin' ? (

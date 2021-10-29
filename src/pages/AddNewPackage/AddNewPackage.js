@@ -11,7 +11,6 @@ const AddNewPackage = () => {
     reset,
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
     axios.post('http://localhost:5000/rafting-packages/', data).then((res) => {
       if (res.data.insertedId) {
         alert('Service added successfully');

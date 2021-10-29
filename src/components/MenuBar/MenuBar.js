@@ -12,7 +12,7 @@ const MenuBar = () => {
         <div className="md:flex md:items-center lg:justify-between md:justify-around">
           <NavLink to="/">
             <h2 className="text-4xl font-bold my-2">
-              <i class="fas fa-ship"></i> Live Rafting
+              <i className="fas fa-ship"></i> Live Rafting
             </h2>
           </NavLink>
           <div className="flex justify-between">
@@ -30,7 +30,7 @@ const MenuBar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/rafting-packages"
+              to="/all-packages"
               activeStyle={{
                 fontWeight: 'bold',
                 backgroundColor: '#fff',
