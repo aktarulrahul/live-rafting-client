@@ -1,0 +1,25 @@
+.lr-why {
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  animation: bg 5s infinite alternate;
+}
+
+.lr-why-bg-1 {
+  background-image: url('https://images.unsplash.com/photo-1582811588429-becf2ea63485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+}
+.lr-why-bg-2 {
+  background-image: url('https://cdn.pixabay.com/photo/2017/04/05/08/03/white-water-rafting-2204203_1280.jpg');
+}
+.lr-why-bg-3 {
+  background-image: url('https://images.unsplash.com/photo-1628470446566-c0fb1438d80d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHJhZnRpbmclMjBib2F0fGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+}
+
+@keyframes bg {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
