@@ -13,7 +13,7 @@ const BookingCard = ({ booking, handleApproved, handleCancel, isUser }) => {
         <p className="border rounded p-2 m-1 ">{booking.raftingName}</p>
       </Link>
       <p className="border rounded p-2 m-1 ">{booking.status}</p>
-      <div className="mx-auto">
+      <div className="border rounded p-2 m-1">
         {isUser ? (
           ''
         ) : (

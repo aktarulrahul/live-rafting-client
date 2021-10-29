@@ -5,7 +5,6 @@ import PackageContainer from '../../components/PackageContainer/PackageContainer
 const AllRaftingPackages = () => {
   return (
     <div>
-      <Banner />
       <PackageContainer />
     </div>
   );

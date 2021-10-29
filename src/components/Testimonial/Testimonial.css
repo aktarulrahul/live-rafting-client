@@ -1,0 +1,21 @@
+.lr-testimonial-bg {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 255, 255, 0.3),
+      rgba(128, 128, 128, 0.7)
+    ),
+    url('https://images.unsplash.com/photo-1530866495561-507c9faab2ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1492&q=80');
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  animation: bg 5s infinite alternate;
+}
+
+@keyframes bg {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}

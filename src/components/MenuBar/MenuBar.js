@@ -87,7 +87,7 @@ const MenuBar = () => {
                     borderRadius: '20px',
                     padding: '4px 10px',
                   }}
-                  className="mx-2 border border-white py-1 px-2 rounded-lg"
+                  className="mx-2 my-2 py-1 px-2"
                 >
                   My Booking
                 </NavLink>
@@ -101,9 +101,9 @@ const MenuBar = () => {
                     borderRadius: '20px',
                     padding: '4px 10px',
                   }}
-                  className="mx-2 border border-white py-1 px-2 rounded-lg"
+                  className="mx-2 my-2 py-1 px-2"
                 >
-                  Manage All Booking
+                  Manage All
                 </NavLink>
                 {/* Add New Package */}
                 <NavLink
@@ -115,9 +115,9 @@ const MenuBar = () => {
                     borderRadius: '20px',
                     padding: '4px 10px',
                   }}
-                  className="mx-2 border border-white py-1 px-2 rounded-lg"
+                  className="mx-2 my-2 py-1 px-2"
                 >
-                  Add New Package
+                  Add New
                 </NavLink>
               </div>
               {/* User Info , Logout */}

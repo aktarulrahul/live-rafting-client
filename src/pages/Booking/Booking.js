@@ -12,9 +12,11 @@ const Booking = () => {
   const { raftingId } = useParams();
   const history = useHistory();
   const [rafting, setRafting] = useState({});
-  const { _id, name, img, price, length, time, description } = rafting;
+  const { name, img, price, length, time, description } = rafting;
   useEffect(() => {
-    fetch(`http://localhost:5000/rafting-packages/${raftingId}`)
+    fetch(
+      `https://aktarulrahul-live-rafting.herokuapp.com/rafting-packages/${raftingId}`
+    )
       .then((res) => res.json())
       .then((data) => setRafting(data));
   }, []);
@@ -32,12 +34,17 @@ const Booking = () => {
       raftingName: rafting.name,
       status: 'pending',
     };
-    axios.post('http://localhost:5000/booking/', bookingData).then((res) => {
-      if (res.data.insertedId) {
-        reset();
-        history.push('/confirm');
-      }
-    });
+    axios
+      .post(
+        'https://aktarulrahul-live-rafting.herokuapp.com/booking/',
+        bookingData
+      )
+      .then((res) => {
+        if (res.data.insertedId) {
+          reset();
+          history.push('/confirm');
+        }
+      });
   };
   return (
     <div>

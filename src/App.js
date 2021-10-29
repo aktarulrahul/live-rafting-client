@@ -11,6 +11,9 @@ import AddNewPackage from './pages/AddNewPackage/AddNewPackage';
 import NotFound from './pages/NotFound/NotFound';
 import AuthProvider from './contexts/AuthProvider';
 import AllRaftingPackages from './pages/AllRaftingPackages/AllRaftingPackages';
+import Contact from './pages/Contact/Contact';
+import About from './pages/About/About';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 function App() {
   return (
     <AuthProvider>
@@ -24,26 +27,29 @@ function App() {
             <Home />
           </Route>
           <Route path="/about">
-            <Home />
+            <About />
           </Route>
           <Route path="/sign-in-up">
             <SignInUp />
           </Route>
-          <Route path="/booking/:raftingId">
+          <PrivateRoute path="/booking/:raftingId">
             <Booking />
-          </Route>
-          <Route path="/confirm">
+          </PrivateRoute>
+          <PrivateRoute path="/confirm">
             <Confirm />
+          </PrivateRoute>
+          <Route path="/contact">
+            <Contact />
           </Route>
-          <Route path="/my-booking/:userEmail">
+          <PrivateRoute path="/my-booking/:userEmail">
             <MyBooking />
-          </Route>
-          <Route path="/manage-all-booking">
+          </PrivateRoute>
+          <PrivateRoute path="/manage-all-booking">
             <AllBooking />
-          </Route>
-          <Route path="/add-new-package">
+          </PrivateRoute>
+          <PrivateRoute path="/add-new-package">
             <AddNewPackage />
-          </Route>
+          </PrivateRoute>
           <Route path="/all-packages">
             <AllRaftingPackages />
           </Route>

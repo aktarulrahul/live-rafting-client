@@ -11,12 +11,17 @@ const AddNewPackage = () => {
     reset,
   } = useForm();
   const onSubmit = (data) => {
-    axios.post('http://localhost:5000/rafting-packages/', data).then((res) => {
-      if (res.data.insertedId) {
-        alert('Service added successfully');
-        reset();
-      }
-    });
+    axios
+      .post(
+        'https://aktarulrahul-live-rafting.herokuapp.com/rafting-packages/',
+        data
+      )
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert('Service added successfully');
+          reset();
+        }
+      });
   };
   return (
     <div className="mx-auto md:w-1/2 my-3 border border-blue-100 shadow-lg p-3 text-center rounded lr-add-form">
