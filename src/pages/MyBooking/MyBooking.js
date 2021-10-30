@@ -41,7 +41,7 @@ const MyBooking = () => {
     );
   }
   return (
-    <div>
+    <div className="lr-all-booking">
       {allBooking.length === 0 ? (
         <div>
           <h2 className="text-center text-4xl text-blue-800 uppercase my-8">

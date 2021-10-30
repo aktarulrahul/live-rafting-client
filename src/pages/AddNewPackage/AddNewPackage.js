@@ -18,14 +18,19 @@ const AddNewPackage = () => {
       )
       .then((res) => {
         if (res.data.insertedId) {
-          alert('Service added successfully');
+          alert('New Rafting Package added successfully');
           reset();
         }
       });
   };
   return (
-    <div className="mx-auto md:w-1/2 my-3 border border-blue-100 shadow-lg p-3 text-center rounded lr-add-form">
-      <h2 className="my-3 text-3xl font-bold uppercase tracking-wide text-blue-800 ">
+    <div className="mx-auto md:w-1/2 my-3 border border-blue-100 shadow-lg p-3 text-center overflow-hidden rounded lr-add-form">
+      <img
+        src="https://i.ibb.co/h22s2QY/rafting-421132-1920.jpg"
+        alt=""
+        className="rounded shadow-lg mb-4  transition duration-500 ease-in-out transform hover:scale-105"
+      />
+      <h2 className="my-4 text-3xl font-bold uppercase tracking-wide text-blue-800 ">
         Add Single Rafting Package
       </h2>
       <form onSubmit={handleSubmit(onSubmit)}>

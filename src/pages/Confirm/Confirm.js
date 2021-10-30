@@ -4,7 +4,7 @@ import confirm from '../../images/confirm.jpg';
 
 const Confirm = () => {
   return (
-    <div className="mx-2 my-5 text-center">
+    <div className="mx-2 text-center">
       <div className="md:flex justify-around items-center">
         <div className="mx-5 shadow-lg p-10">
           <h2 className="text-2xl md:text-6xl font-medium my-8 text-blue-600">
@@ -22,7 +22,7 @@ const Confirm = () => {
             </button>
           </NavLink>
         </div>
-        <div className="my-5">
+        <div className="">
           <img className="w-full mx-auto " src={confirm} alt="" />
         </div>
       </div>

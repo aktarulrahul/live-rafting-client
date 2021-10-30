@@ -19,7 +19,7 @@ const Contact = () => {
           <h2 className="text-4xl font-bold text-center text-blue-800 my-5 ">
             Live Rafting
           </h2>
-          <form onSubmit={handleSumbit} className="mx-3">
+          <form onSubmit={handleSumbit} className="">
             <input
               type="text"
               className="py-2 px-4 rounded border my-2 w-full"
@@ -35,7 +35,7 @@ const Contact = () => {
             <textarea
               cols="30"
               rows="3"
-              className="py-2 px-4 rounded border my-2 w-full"
+              className="py-2 px-4 rounded border my-2 border-gray-300 text-justify"
               placeholder="Message"
             ></textarea>
             <button

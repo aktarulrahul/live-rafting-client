@@ -19,7 +19,7 @@ const Booking = () => {
     )
       .then((res) => res.json())
       .then((data) => setRafting(data));
-  }, []);
+  }, [raftingId]);
 
   const onSubmit = (data) => {
     var date = new Date(data['date-input']),
@@ -47,12 +47,12 @@ const Booking = () => {
       });
   };
   return (
-    <div>
+    <div className="mb-4">
       <img src={img} alt="" className="w-screen h-96 object-cover" />
       <div className="grid md:grid-cols-2 gap-4 lr-add-form">
         {/* Booking From */}
         <div className="md:mx-10 mx-2 -mt-16 bg-blue-200 rounded shadow-lg border p-4 opacity-75 transition duration-500 ease-in-out transform hover:scale-105">
-          <h1 className=" text-center text-6xl font-bold mt-4 text-blue-800">
+          <h1 className=" text-center text-6xl font-bold mt-4 text-blue-800 mb-4">
             <i className="fas fa-ship"></i> Live Rafting
           </h1>
           <hr />
@@ -79,6 +79,7 @@ const Booking = () => {
               control={control}
               render={({ field }) => (
                 <DatePicker
+                  required
                   dateFormat="dd MMMM yyyy"
                   placeholderText="Select Date"
                   selected={field.value}
@@ -90,7 +91,7 @@ const Booking = () => {
             <input
               type="submit"
               value="Confirm Booking"
-              className=" my-4 bg-blue-800 text-white hover:cursor-pointer transition duration-500 ease-in-out transform hover:scale-110"
+              className=" mt-4 bg-blue-800 text-white hover:cursor-pointer transition duration-500 ease-in-out transform hover:scale-110"
             />
           </form>
         </div>

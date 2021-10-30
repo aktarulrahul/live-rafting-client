@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import BookingCard from '../../components/BookingCard/BookingCard';
 import Fade from 'react-reveal/Fade';
+import './AllBooking.css';
 
 const AllBooking = () => {
   const [allBooking, setAllBooking] = useState([]);
@@ -52,7 +53,7 @@ const AllBooking = () => {
     );
   }
   return (
-    <div>
+    <div className="lr-all-booking mx-1">
       {allBooking.map((booking) => (
         <Fade left>
           <BookingCard
